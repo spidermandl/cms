@@ -39,6 +39,12 @@ class D_Common extends CI_Controller {
         parent::__construct();
         // 检测到未安装
         !is_file(WEBPATH.'cache/install.lock') && redirect('http://'.strtolower($_SERVER['HTTP_HOST']).'/index.php?c=install&m=index', 'refresh');
+
+        //<Desmond>
+        define('SITE_PATH', SITE_HOME.'/');
+        define('THEME_PATH', 'statics/');
+        //</Desmond>
+        
         // 初始化环境和数据库
         $this->replace_lang = 1;
         $this->load->database();

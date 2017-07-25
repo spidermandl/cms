@@ -1,12 +1,9 @@
 <?php
 
+if (!defined('BASEPATH')) exit('No direct script access allowed');
+
 /**
- * Dayrui Website Management System
- * 
- * @since			version 2.5.2
- * @author			Dayrui <dayrui@gmail.com>
- * @license     	http://www.dayrui.com/license
- * @copyright		Copyright (c) 2011 - 9999, Dayrui.Com, Inc.
+ * v3.2
  */
 
 /**
@@ -15,26 +12,33 @@
 
 return array(
 
-	'SYS_LOG'                       => 1, //后台操作日志开关
-	'SYS_KEY'                       => 'finecms', //安全密钥
+	'SYS_LOG'                       => 0, //后台操作日志开关
+	'SYS_KEY'                       => 'poscmsed866d528a4d0c524061a9d3508a932e', //安全密钥
 	'SYS_DEBUG'                     => 0, //调试器开关
-	'SYS_HELP_URL'                  => 'http://help.dayrui.com/', //系统帮助url前缀部分
-	'SYS_EMAIL'                     => 'dfaf@fdaf.com', //系统收件邮箱，用于接收系统信息
-	'SYS_REFERER'                   => 0, //来路字符串
+	'SYS_HTTPS'                     => 0, //HTTPS安全模式
+	'SYS_HELP_URL'                  => '', //系统帮助url前缀部分
+	'SYS_EMAIL'                     => 'orientalstu@163.com', //系统收件邮箱，用于接收系统信息
+	'SYS_REFERER'                   => '', //来路字符串
 	'SYS_MEMCACHE'                  => 0, //Memcache缓存开关
-	'SYS_ATTACHMENT_DIR'            => '/uploadfile', //系统附件目录名称
+	'SYS_ATTACHMENT_DIR'            => '', //系统附件目录名称
+	'SYS_ATTACHMENT_DB'             => 0, //附件归档存储开关
 	'SYS_UPLOAD_DIR'                => 'uploadfile', //附件上传目录
+	'SYS_CATE_SHARE'                => 0, //共享栏目展示方式
 	'SYS_ATTACHMENT_URL'            => '', //附件域名设置
 	'SYS_CRON_QUEUE'                => 0, //任务队列方式
 	'SYS_CRON_NUMS'                 => 20, //每次执行任务数量
 	'SYS_CRON_TIME'                 => 300, //每次执行任务间隔
 	'SYS_ONLINE_NUM'                => 1000, //服务器最大在线人数
 	'SYS_ONLINE_TIME'               => 7200, //会员在线保持时间(秒)
+	'SYS_TEMPLATE'                  => '', //网站风格目录名称
+	'SYS_THUMB_DIR'                 => '', //缩略图目录
 	'SYS_NAME'                      => 'POSCMS', //
-	'SYS_NEWS'                      => 0, //
 	'SYS_CMS'                       => 'POSCMS', //
-	'SYS_DOMAIN'                    => '', //后台域名
-	'SYS_UPDATE'                    => 0, //兼容升级开关
+	'SYS_NEWS'                      => 1, //
+	'SYS_SYNC_ADMIN'                => 0, //后台同步登录开关
+	'SYS_THEME_DOMAIN'              => '', //风格域名
+	'SYS_UPDATE'                    => 1, //兼容升级开关
+	'SYS_AUTO_CACHE'                => 0, //自动缓存
 	'SITE_EXPERIENCE'               => '经验值', //经验值名称
 	'SITE_SCORE'                    => '虚拟币', //虚拟币名称
 	'SITE_MONEY'                    => '金钱', //金钱名称
@@ -55,7 +59,7 @@ return array(
 	'SYS_CACHE_POSTER'              => 300, //广告内容缓存期
 	'SYS_CACHE_SPACE'               => 300, //会员空间内容缓存期
 	'SYS_CACHE_TAG'                 => 300, //Tag内容缓存期
-	'SYS_CACHE_COMMENT'             => 300, //评论统计缓存期
-	'SYS_CACHE_PAGE'                => 300, //单页静态化
+	'SYS_CACHE_COMMENT'             => '', //评论统计缓存期
+	'SYS_CACHE_PAGE'                => '', //单页静态化
 
 );
