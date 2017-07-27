@@ -1,24 +1,49 @@
+=================================参考资料========================================
 CodeIgniter开发框架
 CMS文档：http://www.poscms.net/dev-doc/overview/getting_started.html
+使用手册：http://www.poscms.net/help-doc/
+开发手册：http://www.poscms.net/dev-doc/
+================================================================================
+
+=================================安装相关========================================
+运行环境：
+php5.3 - php7
+mysql5以上
+
+安装方法：
+访问http://网站/install.php
+账号密码都是admin
 
 安装php的mcrypt扩展
 安装php gd 图片处理库（imagettftext方法使用）
-修改 config/site/1.php 中的SITE_DOMAIN 字段
+安装完成请更新缓存(config 和 cache 会生成缓存文件，数据访问优先从缓存文件读取)
+================================================================================
 
 应用框架分析记录
-~/install.php 进入安装界面
-~/admin.php 进入管理界面
-~/index.php 进入普通用户界面
+1、网站进入通道
+	~/install.php 进入安装界面
+	~/admin.php 进入管理界面
+	~/index.php 进入普通用户界面
 
-Init.php 程序入口，设置全局常量
-M_Router.php 设置路由机制
-D_Common.php 控制器类第一层继承类，抽象公共方法
-Template.php 模板渲染公共类
+2、代码分析
+	Init.php 程序入口，设置全局常量
+	M_Router.php 设置路由机制
+	D_Common.php 控制器类第一层继承类，抽象公共方法
+	Template.php 模板渲染公共类
+	admin/Module.php 后台安装卸载模块功能代码
+
+3、原理分析
+	config目录和cache在管理界面执行更新缓存操作，会被重写
+	cache/install/install.sql  初始化数据库表
+	后台安装完应用或者模块后需要更新缓存，前端才能生效
+	在管理界面，安装完的独立模块，会在admin菜单栏单独显示,以及用户端菜单栏显示
+	在每个安装模块下的config/install.sql 中可以初始化表数据
 
 admin登录流程：
 	1、admin.php请求，M_Controller中取user cookie，为空，返回登录界面
 	2、输入用户信息，admin.php post请求，登录成功跳入msg.html,附上回调请求地址admim.php
 	3、admin.php请求，M_Controller中取user cookie，不为空，验证用户，进入主界面
+
 
 
 问答：
@@ -29,3 +54,5 @@ admin登录流程：
 	$_GET['s']设置admin，M_Router对应设置directory
 cache目录第一次数据生成？
 	admin登录, _cache_url 方法返回cache url作为msg.html中的回调url，ajax做请求
+
+

@@ -1,12 +1,9 @@
 <?php
 
+if (!defined('BASEPATH')) exit('No direct script access allowed');
+
 /**
- * Dayrui Website Management System
- * 
- * @since			version 2.7.4
- * @author			Dayrui <dayrui@gmail.com>
- * @license     	http://www.dayrui.com/license
- * @copyright		Copyright (c) 2011 - 9999, Dayrui.Com, Inc.
+ * v3.2
  */
 
 /**
@@ -15,6 +12,6 @@
 
 return array(
 
-
+	'127.0.0.1'                     => 1,
 
 );
