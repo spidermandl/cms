@@ -31,19 +31,22 @@ mysql5以上
 	D_Common.php 控制器类第一层继承类，抽象公共方法
 	Template.php 模板渲染公共类
 	admin/Module.php 后台安装卸载模块功能代码
+	admin/Home.php 中cache方法更新所有缓存内容,调用信息在D_Common里的_cache_name方法中
+	D_Module 中_show()方法具体显示一篇内容,Show.php构造函数中初始化$this->dir
+	Site_model 中add_site()方法会创建share相关数据库表
 
 3、原理分析
 	config目录和cache在管理界面执行更新缓存操作，会被重写
-	cache/install/install.sql  初始化数据库表
+	cache/install/install.sql 初始化数据库表
 	后台安装完应用或者模块后需要更新缓存，前端才能生效
-	在管理界面，安装完的独立模块，会在admin菜单栏单独显示,以及用户端菜单栏显示
-	在每个安装模块下的config/install.sql 中可以初始化表数据
+	在管理界面,安装完的独立模块会在admin菜单栏单独显示;以及用户端菜单栏显示,安装完的共享模块会在admin内容菜单栏下显示
+	在每个安装模块下的config/install.sql 里面可以初始化表数据
+
 
 admin登录流程：
 	1、admin.php请求，M_Controller中取user cookie，为空，返回登录界面
 	2、输入用户信息，admin.php post请求，登录成功跳入msg.html,附上回调请求地址admim.php
 	3、admin.php请求，M_Controller中取user cookie，不为空，验证用户，进入主界面
-
 
 
 问答：

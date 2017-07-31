@@ -51,8 +51,8 @@
                             <div class="portlet light  ">
                                 <div class="portlet-body ">
                                     <div class="row">
-                                        <!--热门的-->
-                                        <?php $return = $this->list_tag("action=module field=title,url,thumb order=hits num=6"); if ($return) extract($return); $count=count($return); if (is_array($return)) { foreach ($return as $key=>$t) { ?>
+                                        <!--查询推荐位2（好图推荐）的内容，field需要用到的字段（不填表示全部），按displayorder（后台指定排序）排序-->
+                                        <?php $return = $this->list_tag("action=module flag=2 field=title,url,thumb order=displayorder,updatetime num=6"); if ($return) extract($return); $count=count($return); if (is_array($return)) { foreach ($return as $key=>$t) { ?>
                                         <div class="col-sm-4">
                                             <div class="tile-container">
                                                 <div class="tile-thumbnail">
@@ -119,7 +119,7 @@
                             </div>
                         </div>
                     </div>
-                    <?php } }  echo $error; ?>
+                    <?php } } ?>
 
 
                 </div>

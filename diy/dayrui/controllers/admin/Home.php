@@ -308,7 +308,7 @@ class Home extends M_Controller {
                     $cache = $this->_cache_name();
                     foreach ($cache as $siteid => $c) {
                         foreach ($c as $t) {
-                            list($n, $m) = explode('::', $t);
+                            list($n, $m) = explode('::', $t);//缓存类和类中方法
                             if (strpos($n, '/') !== false) {
                                 list($app, $cls) = explode('/', $n);
                                 $this->load->add_package_path(FCPATH.'module/'.$app);
@@ -318,6 +318,7 @@ class Home extends M_Controller {
                                 $class = $n.'_model';
                                 $this->load->model($n.'_model');
                             }
+                            //load 方法第一个参数是类的实例，第二个参数为$this的成员变量
                             $this->$class->$m($siteid);
                         }
                     }

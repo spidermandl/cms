@@ -29,14 +29,15 @@ function dr_uri_prefix($type, $mod, $cat = array(), $fid = 0, $site = SITE_ID) {
     if ($cat) {
         $dir = isset($cat['mid']) ? $cat['mid'] : $dir;
     }
-
+    //<Desmond>
     if ($type == 'php') {
-        return '/index.php?'.(!$mod ? '' : 's='.$dir.'&');
+        return SITE_HOME.'/index.php?'.(!$mod ? '' : 's='.$dir.'&');
     } elseif ($type == 'cat_show_ext_php') {
-        return '/index.php?'.($mod['share'] ? '' : 's='.$dir.'&');
+        return SITE_HOME.'/index.php?'.($mod['share'] ? '' : 's='.$dir.'&');
     } elseif ($type == 'rewrite') {
-        return '/';
+        return SITE_HOME.'/';
     }
+    //</Desmond>
 }
 
 /**
@@ -1251,7 +1252,9 @@ function dr_module_url($mod, $sid) {
 
     // 绑定域名的情况下
     if ($mod['site'][$sid]['domain']) {
-        return '/';
+        //<Desmond>
+        return SITE_HOME.'/';
+        //</Desmond>
     }
 
     $ci	= &get_instance();
@@ -1259,10 +1262,13 @@ function dr_module_url($mod, $sid) {
     // 自定义规则的情况下
     $rule = $ci->get_cache('urlrule', (int)$mod['site'][$sid]['urlrule'], 'value');
     if ($rule['module']) {
-        return '/'.str_replace('{modname}', $mod['dirname'], $rule['module']);
+        //<Desmond>
+        return SITE_HOME.'/'.str_replace('{modname}', $mod['dirname'], $rule['module']);
+        //</Desmond>
     }
-
-    return '/index.php?s='.$mod['dirname'];
+    //<Desmond>
+    return SITE_HOME.'/index.php?s='.$mod['dirname'];
+    //</Desmond>
 }
 
 

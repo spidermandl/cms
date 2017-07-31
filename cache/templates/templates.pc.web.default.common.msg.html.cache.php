@@ -7,7 +7,7 @@
 <!-- BEGIN HEAD -->
 <head>
 	<meta charset="utf-8" />
-	<title><?php echo fc_lang('提示信息'); ?></title>
+	<title><?php echo $meta_title; ?></title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
 	<meta content="www.dayrui.com" name="author" />
@@ -58,10 +58,10 @@
 			<h4><?php echo $msg; ?></h4>
 			<p class="alert_btnleft">
 				<?php if ($url) { ?>
-				<a href="<?php echo $url; ?>"><?php echo fc_lang('如果您的浏览器没有自动跳转，请点击这里'); ?></a>
+				<a href="<?php echo $url; ?>">如果您的浏览器没有自动跳转，请点击此链接</a>
 				<meta http-equiv="refresh" content="<?php echo $time; ?>; url=<?php echo $url; ?>">
 				<?php } else { ?>
-				<a href="javascript:history.back();" >[<?php echo fc_lang('点击返回上一页'); ?>]</a>
+				<a href="javascript:history.back();" >[单击返回上一页]</a>
 				<?php } ?>
 			</p>
 
@@ -78,13 +78,15 @@
 <script src="<?php echo THEME_PATH; ?>admin/global/plugins/js.cookie.min.js" type="text/javascript"></script>
 <script src="<?php echo THEME_PATH; ?>admin/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
 <script src="<?php echo THEME_PATH; ?>admin/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="<?php echo THEME_PATH; ?>admin/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
 <script src="<?php echo THEME_PATH; ?>admin/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
 <script src="<?php echo THEME_PATH; ?>admin/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+<!-- END CORE PLUGINS -->
+<!-- BEGIN THEME GLOBAL SCRIPTS -->
 <script src="<?php echo THEME_PATH; ?>admin/global/scripts/app.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-	$(function() {
-		top.$('.page-loading').remove();
-	});
-</script>
+<!-- END THEME GLOBAL SCRIPTS -->
+<!-- BEGIN THEME LAYOUT SCRIPTS -->
+<!-- END THEME LAYOUT SCRIPTS -->
 </body>
+
 </html>

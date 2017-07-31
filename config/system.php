@@ -13,7 +13,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 return array(
 
 	'SYS_LOG'                       => 0, //后台操作日志开关
-	'SYS_KEY'                       => 'poscmsce14518a3e256646b783b6884081f68d', //安全密钥
+	'SYS_KEY'                       => 'poscmsb0c4fc6af78113931756568f5d314c20', //安全密钥
 	'SYS_DEBUG'                     => 0, //调试器开关
 	'SYS_HTTPS'                     => 0, //HTTPS安全模式
 	'SYS_HELP_URL'                  => '', //系统帮助url前缀部分

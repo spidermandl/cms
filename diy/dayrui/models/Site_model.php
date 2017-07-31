@@ -42,11 +42,11 @@ class Site_model extends CI_Model {
 	public function add_site($data) {
 	
 		if (!$data) {
-            return NULL;
-        }
+        return NULL;
+    }
 
-        $data['setting']['SITE_THEME'] = SITE_THEME;
-        $data['setting']['SITE_TEMPLATE'] = SITE_TEMPLATE;
+    $data['setting']['SITE_THEME'] = SITE_THEME;
+    $data['setting']['SITE_TEMPLATE'] = SITE_TEMPLATE;
 		$data['setting']['SITE_NAVIGATOR'] = '主导航,首页幻灯,首页头条,底部导航,友情链接';
 		$data['setting']['SITE_TIME_FORMAT'] = 'Y-m-d H:i';
 
@@ -58,8 +58,8 @@ class Site_model extends CI_Model {
 
 		$id = $this->db->insert_id();
 
-        // 创建数据表
-        $this->db->query("DROP TABLE IF EXISTS `".$this->db->dbprefix($id.'_page')."`");
+    // 创建数据表
+    $this->db->query("DROP TABLE IF EXISTS `".$this->db->dbprefix($id.'_page')."`");
 		$this->db->query(trim("
 		CREATE TABLE IF NOT EXISTS `".$this->db->dbprefix($id.'_page')."` (
 		  `id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,
@@ -117,8 +117,8 @@ class Site_model extends CI_Model {
 		) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='表单模型表';
 		"));
 
-        $this->db->query("DROP TABLE IF EXISTS `".$this->db->dbprefix($id.'_remote')."`");
-        $this->db->query(trim("
+    $this->db->query("DROP TABLE IF EXISTS `".$this->db->dbprefix($id.'_remote')."`");
+    $this->db->query(trim("
 		CREATE TABLE IF NOT EXISTS `".$this->db->dbprefix($id.'_remote')."` (
           `id` tinyint(2) unsigned NOT NULL AUTO_INCREMENT,
           `url` varchar(255) NOT NULL,
@@ -130,7 +130,7 @@ class Site_model extends CI_Model {
         ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='远程附件表';
 		"));
 
-        $this->db->query("DROP TABLE IF EXISTS `".$this->db->dbprefix($id.'_navigator')."`");
+    $this->db->query("DROP TABLE IF EXISTS `".$this->db->dbprefix($id.'_navigator')."`");
 		$this->db->query(trim("
 		CREATE TABLE IF NOT EXISTS `".$this->db->dbprefix($id.'_navigator')."` (
 		  `id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,
@@ -156,8 +156,8 @@ class Site_model extends CI_Model {
 		) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='网站导航表';
 		"));
 
-        $this->db->query("DROP TABLE IF EXISTS `".$this->db->dbprefix($id.'_share_category')."`");
-        $this->db->query(trim("
+    $this->db->query("DROP TABLE IF EXISTS `".$this->db->dbprefix($id.'_share_category')."`");
+    $this->db->query(trim("
         CREATE TABLE IF NOT EXISTS `".$this->db->dbprefix($id.'_share_category')."` (
           `id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,
           `tid` tinyint(1) NOT NULL COMMENT '栏目类型，0单页，1模块，2外链',
@@ -187,7 +187,7 @@ class Site_model extends CI_Model {
         ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='共享模块栏目表';
         "));
 
-        $this->db->query("DROP TABLE IF EXISTS `".$this->db->dbprefix($id.'_share_index')."`");
+    $this->db->query("DROP TABLE IF EXISTS `".$this->db->dbprefix($id.'_share_index')."`");
         $this->db->query(trim("
         CREATE TABLE IF NOT EXISTS `".$this->db->dbprefix($id.'_share_index')."` (
           `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
