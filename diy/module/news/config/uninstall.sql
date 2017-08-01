@@ -1,0 +1,1 @@
+DELETE FROM `{dbprefix}{siteid}_share_index` WHERE mid = 'news'; 

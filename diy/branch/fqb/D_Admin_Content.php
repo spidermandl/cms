@@ -339,7 +339,7 @@ class D_Admin_Content extends M_Controller {
 
     }
 
-    private function _get_keyword($kw){
+    protected function _get_keyword($kw){
 
         $rt = '';
         //tag数据

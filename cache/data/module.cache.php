@@ -1,1 +1,1 @@
-a:1:{i:1;a:3:{i:0;s:4:"news";i:1;s:5:"photo";i:2;s:4:"book";}}
+a:1:{i:1;a:3:{i:0;s:5:"photo";i:1;s:4:"news";i:2;s:4:"book";}}

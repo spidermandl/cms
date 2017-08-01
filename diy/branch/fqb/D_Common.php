@@ -3079,7 +3079,7 @@ class D_Common extends CI_Controller {
     }
 
     // 提取关键字
-    function _get_keyword($kw){
+    protected function _get_keyword($kw){
 
         if (!$kw) {
             return '';

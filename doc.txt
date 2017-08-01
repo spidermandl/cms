@@ -57,5 +57,7 @@ admin登录流程：
 	$_GET['s']设置admin，M_Router对应设置directory
 cache目录第一次数据生成？
 	admin登录, _cache_url 方法返回cache url作为msg.html中的回调url，ajax做请求
+cms内容为什么要做share_index索引？
+如何发布文章?
 
 

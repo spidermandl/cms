@@ -215,41 +215,41 @@ INSERT INTO `{tablename}_search_index` VALUES('904d45cf9dfa3d512106418bb50b9716'
 -- 转存表中的数据 `{dbprefix}{siteid}_share_index`
 --
 
--- INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(1,'news');
--- INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(2, 'news');
--- INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(3, 'news');
--- INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(4, 'news');
--- INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(5, 'news');
--- INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(6, 'news');
--- INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(7, 'news');
--- INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(8, 'news');
--- INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(9, 'news');
--- INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(10, 'news');
--- INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(11, 'news');
--- INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(12, 'news');
--- INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(13, 'news');
--- INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(14, 'news');
--- INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(15, 'news');
--- INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(16, 'news');
--- INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(17, 'news');
--- INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(18, 'news');
--- INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(19, 'news');
--- INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(20, 'news');
--- INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(21, 'news');
--- INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(22, 'news');
--- INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(23, 'news');
--- INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(24, 'news');
--- INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(25, 'news');
--- INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(26, 'news');
--- INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(27, 'news');
--- INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(28, 'news');
--- INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(29, 'news');
--- INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(30, 'news');
--- INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(31, 'news');
--- INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(32, 'news');
--- INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(33, 'news');
--- INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(34, 'news');
--- INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(35, 'news');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(1,'news');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(2, 'news');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(3, 'news');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(4, 'news');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(5, 'news');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(6, 'news');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(7, 'news');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(8, 'news');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(9, 'news');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(10, 'news');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(11, 'news');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(12, 'news');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(13, 'news');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(14, 'news');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(15, 'news');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(16, 'news');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(17, 'news');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(18, 'news');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(19, 'news');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(20, 'news');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(21, 'news');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(22, 'news');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(23, 'news');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(24, 'news');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(25, 'news');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(26, 'news');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(27, 'news');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(28, 'news');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(29, 'news');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(30, 'news');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(31, 'news');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(32, 'news');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(33, 'news');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(34, 'news');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(35, 'news');
 
 
 
