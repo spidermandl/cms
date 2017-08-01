@@ -823,7 +823,9 @@ class Member_model extends CI_Model {
         defined('UCSSO_API') && $synlogin.= ucsso_synlogout();
 
         foreach ($MEMBER['synurl'] as $url) {
-            $synlogin.= '<script type="text/javascript" src="'.$url.'/index.php?c=api&m=synlogout"></script>';
+            //<Desmond>
+            $synlogin.= '<script type="text/javascript" src="'.$url.SITE_HOME.'/index.php?c=api&m=synlogout"></script>';
+            //</Desmond>
         }
 
         return $synlogin;

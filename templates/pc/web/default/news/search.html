@@ -56,7 +56,7 @@
                                         <li class="search-item clearfix">
                                             <div class="search-content text-left">
                                                 <h4 class="search-title">
-                                                    <a title="{$t.title}" href="{$t.url}">{dr_keyword_highlight($t.title, $keyword)}</a>
+                                                    <a title="{$t.title}" href="{dr_absolute_url($t.url)}">{dr_keyword_highlight($t.title, $keyword)}</a>
                                                 </h4>
                                                 <p class="search-desc">{dr_keyword_highlight($t.description, $keyword)}</p>
                                                 <div class="search-post-foot">

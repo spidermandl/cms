@@ -3,7 +3,7 @@ function dr_loginout(msg) {
     $.ajax({
         type: "POST",
         dataType: "json",
-        url: "/index.php?s=member&c=login&m=out",
+        url: "index.php?s=member&c=login&m=out",
         success: function(data) {
             dr_tips(msg, 3, 1);
             setTimeout('window.location.href="' + data.backurl + '"', 2000);
@@ -146,7 +146,7 @@ function dr_input_files(name, count) {
         return
     }
     var id = size + 1;
-    var url = '/index.php?s=member&c=api&&m=upload_input';
+    var url = 'index.php?s=member&c=api&&m=upload_input';
     $.ajax({
         type: "GET",
         url: url,
@@ -188,7 +188,7 @@ function dr_input_files(name, count) {
     })
 }
 function dr_edit_input_file(file2, title2, name, id) {
-    var url = '/index.php?s=member&c=api&m=upload_input&file=' + file2 + '&title=' + title2;
+    var url = 'index.php?s=member&c=api&m=upload_input&file=' + file2 + '&title=' + title2;
     $.ajax({
         type: "GET",
         url: url,

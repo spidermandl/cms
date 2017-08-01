@@ -277,7 +277,7 @@
 							{loop $left.link $t}
 							<li class="nav-item  {if $t.id==$menu_id} active open{/if}">
 
-								<a href="{if $t.url}{$t.url}{else}{dr_member_url($t.uri)}{/if}" {if $t.target}target="_blank"{/if} class="nav-link ">
+								<a href="{if $t.url}{dr_absolute_url($t.url)}{else}{dr_member_url($t.uri)}{/if}" {if $t.target}target="_blank"{/if} class="nav-link ">
 								<i class="{$t.icon}"></i>
 								<span class="title">{$t.name}</span>
 								{if isset($notices[$t.uri])}<span class="badge badge-success">{intval($notices[$t.uri])}</span>{/if}
@@ -332,7 +332,7 @@
 							<ul class="dropdown-menu pull-right" role="menu">
 								{loop $menu[$menu_tid]['left'][$menu_pid]['link'] $t}
 								<li>
-									<a href="{if $t.url}{$t.url}{else}{dr_member_url($t.uri)}{/if}" {if $t.target}target="_blank"{/if}>
+									<a href="{if $t.url}{dr_absolute_url($t.url)}{else}{dr_member_url($t.uri)}{/if}" {if $t.target}target="_blank"{/if}>
 										<i class="{$t.icon}"></i> {$t.name}</a>
 								</li>
 								{/loop}

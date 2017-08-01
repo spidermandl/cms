@@ -177,3 +177,100 @@ ERROR - 2017-08-02 01:18:16 --> Unable to connect to the database
 ERROR - 2017-08-02 01:18:17 --> Unable to connect to the database
 ERROR - 2017-08-02 01:18:22 --> Unable to connect to the database
 ERROR - 2017-08-02 01:18:27 --> Unable to connect to the database
+ERROR - 2017-08-02 01:26:47 --> Unable to connect to the database
+ERROR - 2017-08-02 01:26:47 --> Unable to connect to the database
+ERROR - 2017-08-02 01:26:47 --> Unable to connect to the database
+ERROR - 2017-08-02 01:26:47 --> Unable to connect to the database
+ERROR - 2017-08-02 01:26:56 --> Unable to connect to the database
+ERROR - 2017-08-02 01:26:59 --> Unable to connect to the database
+ERROR - 2017-08-02 01:27:02 --> Unable to connect to the database
+ERROR - 2017-08-02 01:27:05 --> Unable to connect to the database
+ERROR - 2017-08-02 01:27:07 --> Unable to connect to the database
+ERROR - 2017-08-02 01:27:08 --> Unable to connect to the database
+ERROR - 2017-08-02 01:29:16 --> Unable to connect to the database
+ERROR - 2017-08-02 01:29:18 --> Unable to connect to the database
+ERROR - 2017-08-02 01:29:20 --> Unable to connect to the database
+ERROR - 2017-08-02 01:29:22 --> Unable to connect to the database
+ERROR - 2017-08-02 01:29:24 --> Unable to connect to the database
+ERROR - 2017-08-02 01:29:28 --> Unable to connect to the database
+ERROR - 2017-08-02 01:29:28 --> Unable to connect to the database
+ERROR - 2017-08-02 01:29:36 --> Unable to connect to the database
+ERROR - 2017-08-02 01:29:39 --> Unable to connect to the database
+ERROR - 2017-08-02 01:29:40 --> Unable to connect to the database
+ERROR - 2017-08-02 01:29:40 --> Unable to connect to the database
+ERROR - 2017-08-02 01:29:42 --> Unable to connect to the database
+ERROR - 2017-08-02 01:29:43 --> Unable to connect to the database
+ERROR - 2017-08-02 01:29:43 --> Unable to connect to the database
+ERROR - 2017-08-02 01:29:43 --> Unable to connect to the database
+ERROR - 2017-08-02 01:29:46 --> Unable to connect to the database
+ERROR - 2017-08-02 01:30:10 --> Unable to connect to the database
+ERROR - 2017-08-02 01:30:13 --> Unable to connect to the database
+ERROR - 2017-08-02 01:30:57 --> Unable to connect to the database
+ERROR - 2017-08-02 01:33:02 --> Unable to connect to the database
+ERROR - 2017-08-02 01:33:02 --> Unable to connect to the database
+ERROR - 2017-08-02 01:33:02 --> Unable to connect to the database
+ERROR - 2017-08-02 01:33:02 --> Unable to connect to the database
+ERROR - 2017-08-02 01:33:02 --> Unable to connect to the database
+ERROR - 2017-08-02 01:35:21 --> Unable to connect to the database
+ERROR - 2017-08-02 01:35:21 --> Unable to connect to the database
+ERROR - 2017-08-02 01:35:21 --> Unable to connect to the database
+ERROR - 2017-08-02 01:35:21 --> Unable to connect to the database
+ERROR - 2017-08-02 01:35:21 --> Unable to connect to the database
+ERROR - 2017-08-02 01:35:22 --> Unable to connect to the database
+ERROR - 2017-08-02 01:35:22 --> Unable to connect to the database
+ERROR - 2017-08-02 01:35:22 --> Unable to connect to the database
+ERROR - 2017-08-02 01:35:22 --> Unable to connect to the database
+ERROR - 2017-08-02 01:35:22 --> Unable to connect to the database
+ERROR - 2017-08-02 01:35:43 --> Unable to connect to the database
+ERROR - 2017-08-02 01:35:59 --> Unable to connect to the database
+ERROR - 2017-08-02 01:36:04 --> Unable to connect to the database
+ERROR - 2017-08-02 01:36:09 --> Unable to connect to the database
+ERROR - 2017-08-02 01:36:14 --> Unable to connect to the database
+ERROR - 2017-08-02 01:36:19 --> Unable to connect to the database
+ERROR - 2017-08-02 01:36:24 --> Unable to connect to the database
+ERROR - 2017-08-02 01:36:29 --> Unable to connect to the database
+ERROR - 2017-08-02 01:36:34 --> Unable to connect to the database
+ERROR - 2017-08-02 01:36:39 --> Unable to connect to the database
+ERROR - 2017-08-02 01:36:44 --> Unable to connect to the database
+ERROR - 2017-08-02 01:36:49 --> Unable to connect to the database
+ERROR - 2017-08-02 01:36:54 --> Unable to connect to the database
+ERROR - 2017-08-02 01:36:59 --> Unable to connect to the database
+ERROR - 2017-08-02 01:37:04 --> Unable to connect to the database
+ERROR - 2017-08-02 01:37:09 --> Unable to connect to the database
+ERROR - 2017-08-02 01:37:14 --> Unable to connect to the database
+ERROR - 2017-08-02 01:37:21 --> Unable to connect to the database
+ERROR - 2017-08-02 01:37:22 --> Unable to connect to the database
+ERROR - 2017-08-02 01:38:42 --> Unable to connect to the database
+ERROR - 2017-08-02 01:38:43 --> Unable to connect to the database
+ERROR - 2017-08-02 01:38:45 --> Unable to connect to the database
+ERROR - 2017-08-02 01:38:46 --> Unable to connect to the database
+ERROR - 2017-08-02 01:38:47 --> Unable to connect to the database
+ERROR - 2017-08-02 01:38:49 --> Unable to connect to the database
+ERROR - 2017-08-02 01:38:49 --> Unable to connect to the database
+ERROR - 2017-08-02 01:38:51 --> Unable to connect to the database
+ERROR - 2017-08-02 01:38:52 --> Unable to connect to the database
+ERROR - 2017-08-02 01:38:54 --> Unable to connect to the database
+ERROR - 2017-08-02 01:38:57 --> Unable to connect to the database
+ERROR - 2017-08-02 01:38:58 --> Unable to connect to the database
+ERROR - 2017-08-02 01:38:59 --> Unable to connect to the database
+ERROR - 2017-08-02 01:39:01 --> Unable to connect to the database
+ERROR - 2017-08-02 01:44:01 --> Unable to connect to the database
+ERROR - 2017-08-02 01:44:06 --> Unable to connect to the database
+ERROR - 2017-08-02 01:44:11 --> Unable to connect to the database
+ERROR - 2017-08-02 02:07:29 --> Severity: Parsing Error --> parse error, expecting `"identifier (T_STRING)"' /Users/Desmond/Sites/poscms/cache/templates/templates.pc.web.default.common.member.html.cache.php 85
+ERROR - 2017-08-02 02:07:34 --> Severity: Parsing Error --> parse error, expecting `"identifier (T_STRING)"' /Users/Desmond/Sites/poscms/cache/templates/templates.pc.web.default.common.member.html.cache.php 85
+ERROR - 2017-08-02 02:07:46 --> Severity: Parsing Error --> parse error, expecting `"identifier (T_STRING)"' /Users/Desmond/Sites/poscms/cache/templates/templates.pc.web.default.common.member.html.cache.php 85
+ERROR - 2017-08-02 02:07:50 --> Severity: Parsing Error --> parse error, expecting `"identifier (T_STRING)"' /Users/Desmond/Sites/poscms/cache/templates/templates.pc.web.default.common.member.html.cache.php 85
+ERROR - 2017-08-02 02:07:52 --> Severity: Parsing Error --> parse error, expecting `"identifier (T_STRING)"' /Users/Desmond/Sites/poscms/cache/templates/templates.pc.web.default.common.member.html.cache.php 85
+ERROR - 2017-08-02 02:07:52 --> Severity: Parsing Error --> parse error, expecting `"identifier (T_STRING)"' /Users/Desmond/Sites/poscms/cache/templates/templates.pc.web.default.common.member.html.cache.php 85
+ERROR - 2017-08-02 02:07:53 --> Severity: Parsing Error --> parse error, expecting `"identifier (T_STRING)"' /Users/Desmond/Sites/poscms/cache/templates/templates.pc.web.default.common.member.html.cache.php 85
+ERROR - 2017-08-02 02:07:58 --> Severity: Parsing Error --> parse error, expecting `"identifier (T_STRING)"' /Users/Desmond/Sites/poscms/cache/templates/templates.pc.web.default.common.member.html.cache.php 85
+ERROR - 2017-08-02 02:08:14 --> Severity: Parsing Error --> parse error, expecting `"identifier (T_STRING)"' /Users/Desmond/Sites/poscms/cache/templates/templates.pc.web.default.common.member.html.cache.php 85
+ERROR - 2017-08-02 02:08:19 --> Severity: Parsing Error --> parse error, expecting `"identifier (T_STRING)"' /Users/Desmond/Sites/poscms/cache/templates/templates.pc.web.default.common.member.html.cache.php 85
+ERROR - 2017-08-02 02:08:21 --> Severity: Parsing Error --> parse error, expecting `"identifier (T_STRING)"' /Users/Desmond/Sites/poscms/cache/templates/templates.pc.web.default.common.member.html.cache.php 85
+ERROR - 2017-08-02 02:08:23 --> Severity: Parsing Error --> parse error, expecting `"identifier (T_STRING)"' /Users/Desmond/Sites/poscms/cache/templates/templates.pc.web.default.common.member.html.cache.php 85
+ERROR - 2017-08-02 02:08:30 --> Severity: Parsing Error --> parse error, expecting `"identifier (T_STRING)"' /Users/Desmond/Sites/poscms/cache/templates/templates.pc.web.default.common.member.html.cache.php 85
+ERROR - 2017-08-02 02:08:34 --> Severity: Parsing Error --> parse error, expecting `"identifier (T_STRING)"' /Users/Desmond/Sites/poscms/cache/templates/templates.pc.web.default.common.member.html.cache.php 85
+ERROR - 2017-08-02 02:18:36 --> Unable to connect to the database
+ERROR - 2017-08-02 02:18:39 --> Unable to connect to the database
+ERROR - 2017-08-02 02:18:47 --> Unable to connect to the database
