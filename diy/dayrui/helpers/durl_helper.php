@@ -1325,7 +1325,7 @@ function dr_url($url, $query = array(), $self = SELF) {
 	}
 
     $query && $uri = @array_merge($uri, $query);
-
+    
 	return $self.'?'.@http_build_query($uri);
 }
 

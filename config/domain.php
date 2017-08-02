@@ -13,5 +13,6 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 return array(
 
 	'127.0.0.1'                     => 1,
+	''                              => 1,
 
 );

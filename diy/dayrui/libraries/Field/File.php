@@ -326,6 +326,9 @@ class F_File extends A_Field {
 			if (!$disabled) {
 				// 完整上传
 				$furl = '/index.php?s=member&c=api&m=upload&name='.$name.'&siteid='.SITE_ID.'&count=1&code='.str_replace('=', '', dr_authcode($cfg['option']['size'].'|'.$cfg['option']['ext'].'|'.$this->get_upload_path($cfg['option']['uploadpath']), 'ENCODE'));
+				//<Desmond>
+				$furl = dr_absolute_url($furl);
+				//</Desmond>
 				$str.= '<div class="col-md-3 my_upload"><button type="button" style="cursor:pointer;"  class="btn blue btn-sm" onclick="dr_upload_file(\''.$name.'\', \''.$furl.'\')"> <i class="fa fa-upload"></i> ' . fc_lang('上传') . '</button></div>';
 
 				$str.= '

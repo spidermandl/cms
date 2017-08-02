@@ -1,0 +1,1 @@
+<?php exit();?>{"1":{"key":"FC732B797129A93B331BF5","name":"poscms","root":"http:\/\/127.0.0.1\/poscms","ip":"127.0.0.1","url":["http:\/\/127.0.0.1\/poscms\/api\/ucsso\/api.php"]}}

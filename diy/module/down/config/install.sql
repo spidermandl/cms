@@ -39,7 +39,6 @@ INSERT INTO `{tablename}_data_0` VALUES(43, 1, 2, '', '', '', '', '<h1 style="ma
 --
 -- 转存表中的数据 `{tablename}_hits`
 --
-
 INSERT INTO `{tablename}_hits` VALUES(43, 3, 3, 4, 4, 1);
 INSERT INTO `{tablename}_hits` VALUES(37, 1, 1, 2, 2, 1);
 INSERT INTO `{tablename}_hits` VALUES(42, 1, 1, 2, 2, 1);
@@ -48,8 +47,7 @@ INSERT INTO `{tablename}_hits` VALUES(36, 5, 1, 6, 6, 1);
 -- --------------------------------------------------------
 --
 -- 转存表中的数据 `{tablename}_index`
---
-
+-- 
 INSERT INTO `{tablename}_index` VALUES(36, 1, 2, 9, 1478484450);
 INSERT INTO `{tablename}_index` VALUES(37, 1, 2, 9, 1478484505);
 INSERT INTO `{tablename}_index` VALUES(38, 1, 2, 9, 1478484540);
@@ -60,3 +58,11 @@ INSERT INTO `{tablename}_index` VALUES(42, 1, 2, 9, 1478484718);
 INSERT INTO `{tablename}_index` VALUES(43, 1, 2, 9, 1478484734);
 
 -- --------------------------------------------------------
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(36, 'down');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(37, 'down');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(38, 'down');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(39, 'down');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(40, 'down');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(41, 'down');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(42, 'down');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(43, 'down');

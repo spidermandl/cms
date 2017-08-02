@@ -77,7 +77,7 @@
 		<ul class="tabBut cu-li">
 			<li onclick="SwapTab2(0);" class="on">{fc_lang('上传文件')}</li>
 			<li onclick="SwapTab2(1);">{fc_lang('手动输入')}</li>
-			{if $member.adminid}<li onclick="SwapTab2(2);set_iframe('myattach', '/index.php?s=member&c=api&m=myattach&ext={$ext}&fcount={$fcount}');">{fc_lang('网站附件')}</li>{/if}
+			{if $member.adminid}<li onclick="SwapTab2(2);set_iframe('myattach', '{SITE_HOME}/index.php?s=member&c=api&m=myattach&ext={$ext}&fcount={$fcount}');">{fc_lang('网站附件')}</li>{/if}
 			{if $notused}<li onclick="SwapTab2(3);">{fc_lang('未使用的文件')}</li>{/if}
 		</ul>
 		{/if}

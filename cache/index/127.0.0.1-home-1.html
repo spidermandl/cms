@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="zh-cn">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+    <meta charset="utf-8" />
+    <title>FineCMS体验网站</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="statics/admin/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="statics/admin/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="statics/admin/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="statics/admin/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css" />
+    <link href="statics/admin/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <!-- BEGIN THEME GLOBAL STYLES -->
+    <link href="statics/admin/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
+    <link href="statics/admin/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
+    <link href="statics/admin/pages/css/search.min.css" rel="stylesheet" type="text/css" />
+    <link href="statics/admin/apps/css/todo-2.min.css" rel="stylesheet" type="text/css" />
+    <!-- END THEME GLOBAL STYLES -->
+    <!-- BEGIN THEME LAYOUT STYLES -->
+    <link href="statics/default/layouts/layout3/css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="statics/default/layouts/layout3/css/themes/default.min.css" rel="stylesheet" type="text/css" id="style_color" />
+    <link href="statics/default/layouts/layout3/css/custom.min.css" rel="stylesheet" type="text/css" />
+    <!-- END THEME LAYOUT STYLES -->
+    <!--[if lt IE 9]>
+    <script src="statics/admin/global/plugins/respond.min.js"></script>
+    <script src="statics/admin/global/plugins/excanvas.min.js"></script>
+    <![endif]-->
+    <!-- BEGIN CORE PLUGINS -->
+    <script src="statics/admin/global/plugins/jquery.min.js" type="text/javascript"></script>
+    <script src="statics/admin/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="statics/admin/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+    <script src="statics/admin/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+    <script src="statics/admin/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+    <script src="statics/admin/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+    <script src="statics/admin/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+    <!-- END CORE PLUGINS -->
+    <!-- BEGIN THEME GLOBAL SCRIPTS -->
+    <script src="statics/admin/global/scripts/app.js" type="text/javascript"></script>
+    <!-- END THEME GLOBAL SCRIPTS -->
+    <!-- BEGIN THEME LAYOUT SCRIPTS -->
+    <script src="statics/default/layouts/layout3/scripts/layout.min.js" type="text/javascript"></script>
+    <script src="statics/default/layouts/layout3/scripts/demo.min.js" type="text/javascript"></script>
+    <script src="statics/default/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
+    <!-- END THEME LAYOUT SCRIPTS -->
+
+    <!--关键JS开始-->
+    <script type="text/javascript">var memberpath = "/poscms/";</script>
+    <script type="text/javascript" src="statics/js/zh-cn.js"></script>
+    <link rel="stylesheet" href="statics/js/ui-dialog.css">
+    <script type="text/javascript" src="statics/js/dialog-plus.js"></script>
+    <script type="text/javascript" src="statics/js/jquery.artDialog.js?skin=default"></script>
+    <script type="text/javascript" src="statics/js/dayrui.js"></script>
+    <!--关键js结束-->
+        <!-- END HEAD -->
+</head>
+<body class="page-container-bg-solid page-header-menu-fixed page-boxed">
+<!-- BEGIN HEADER -->
+<div class="page-header">
+    <!-- BEGIN HEADER TOP -->
+    <div class="page-header-top">
+
+        <div class="container">
+            <div class="row" id="dr_mytop">
+                <script type="text/javascript">
+	    $.ajax({type: "GET", url: "http://127.0.0.1/poscms/index.php?c=api&m=html&name=mytop.html&params=&"+Math.random(), dataType:"jsonp",
+            success: function (data) {
+                $("#dr_mytop").html(data.html);
+            }
+        });
+	</script>                <!-- 这一段内容采用动态调用的方式 -->
+            </div>
+            <!-- BEGIN LOGO -->
+            <div class="page-logo">
+                <a href="http://127.0.0.1/poscms/">
+                    <img src="statics/default/layouts/layout3/img/logo.png" alt="FineCMS体验网站" class="logo-default">
+                </a>
+            </div>
+            <!-- END LOGO -->
+            <!-- BEGIN 菜单按钮 -->
+            <a href="javascript:;" class="menu-toggler"></a>
+            <!-- END 菜单按钮 -->
+            <!-- BEGIN 会员登录信息 -->
+            <div class="top-menu" id="dr_member_info">
+
+            </div>
+            <script type="text/javascript">
+                $.ajax({
+                    type: "GET",
+                    url:"http://127.0.0.1/poscms/index.php?c=api&m=member&format=jsonp",
+                    dataType: "jsonp",
+                    success: function(json){
+                        $("#dr_member_info").html(json.html);
+                    },
+                    error: function(){ }
+                });
+            </script>
+            <!-- END 会员登录信息 -->
+        </div>
+    </div>
+    <!-- END HEADER TOP -->
+    <!-- BEGIN HEADER MENU -->
+    <div class="page-header-menu">
+        <div class="container2">
+            <!-- 全站搜索框 -->
+            <form class="search-form" method="get" target="_blank" action="http://127.0.0.1/poscms/index.php">
+                <input name="c" type="hidden" value="so">
+                <input name="module" type="hidden" value="">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="输入搜索关键字" name="keyword">
+					<span class="input-group-btn">
+						<a href="javascript:;" class="btn submit">
+                            <i class="icon-magnifier"></i>
+                        </a>
+					</span>
+                </div>
+            </form>
+            <!-- 调用网站导航菜单 -->
+            <div class="hor-menu  ">
+                <ul class="nav navbar-nav">
+                    <li id="dr_nav_0" class="menu-dropdown classic-menu-dropdown active">
+                        <a href="http://127.0.0.1/poscms/" title="FineCMS体验网站">首页</a>
+                    </li>
+
+
+
+                    <!--第一层：调用栏目-->
+                    
+
+                    <!--调用所有独立模块-->
+                                        <li class="menu-dropdown classic-menu-dropdown ">
+                        <a href="/poscms/index.php?s=photo" title="">图片</a>
+                    </li>
+                                        <li class="menu-dropdown classic-menu-dropdown ">
+                        <a href="/poscms/index.php?s=news" title="">新闻</a>
+                    </li>
+                    
+
+                </ul>
+            </div>
+            <!-- END MEGA MENU -->
+        </div>
+    </div>
+    <!-- END HEADER MENU -->
+</div>
+<!-- END HEADER -->
+<div class="page-container">
+	<div class="page-content-wrapper">
+		<div class="page-head">
+			<div class="container">
+				<div class="page-title">
+					<h1><small>欢迎使用POSCMS高级版全能网站管理系统</small></h1>
+				</div>
+			</div>
+		</div>
+		<div class="page-content">
+			<div class="container">
+				<div class="page-content-inner">
+
+					<div class="row">
+						<div class="col-md-4">
+							<div class="bg-white">
+								<link href="statics/default/slide/slide.css" type="text/css" rel="stylesheet">
+								<div id="myslide" style="width: auto; height: auto; overflow: hidden">
+									<table width="100%" cellSpacing="0" cellPadding="0">
+										<tr>
+											<td class="pic" id="bimg">
+																								<table id="font_hd" width="100%" cellSpacing="0" cellPadding="0">
+													<tr>
+														<td class="title" id="info">
+																													</td>
+														<td id="simg" nowrap="nowrap" style="text-align:right">
+																													</td>
+													</tr>
+												</table>
+												<script src="statics/default/slide/slide.js"></script>
+											</td>
+										</tr>
+									</table>
+								</div>
+
+							</div>
+						</div>
+						<div class="col-md-8">
+							<div class="portlet light  ">
+								<div class="portlet-title ">
+									<div class="row">
+										<div class="col-md-12">
+											<!--调用type=2的头条数据-->
+																					</div>
+									</div>
+								</div>
+								<div class="portlet-body ">
+									<div class="row">
+										<div class="col-md-6">
+											<ul class="list-unstyled">
+												<!--调用新闻模块的“首页中间”属性的最新10条-->
+																							</ul>
+										</div>
+										<div class="col-md-6">
+											<ul class="list-unstyled">
+												<!--调用新闻模块的“首页中间”属性的最新10条-->
+																							</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="portlet light" style="height: 90px; text-align: center;">
+								<h4>POSCMS全能网站管理系统</h4>
+							</div>
+						</div>
+					</div>
+
+					<!-- 调用新闻模块 -->
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="portlet light">
+								<div class="portlet-title">
+									<div class="caption">
+										<i class=" icon-layers font-green"></i>
+										<span class="caption-subject bold uppercase"><a class=" font-green" href="http://127.0.0.1/poscms/index.php?s=news">新闻模块</a></span>
+									</div>
+									<ul class="nav nav-tabs">
+										<!-- 调用新闻模块的顶级栏目 -->
+																			</ul>
+								</div>
+								<div class="portlet-body">
+									<div class="row">
+										<div class="col-lg-7">
+											<div class="row">
+												<div class="col-md-12 media">
+													<!-- 调用新闻模块的“今日视点”属性的第一条 -->
+																									</div>
+											</div>
+											<div class="row" style="margin-top: 10px">
+												<div class="col-md-6">
+													<ul class="list-unstyled">
+														<!-- 调用新闻模块的“阅读推荐”属性的10条数据 -->
+																											</ul>
+												</div>
+												<div class="col-md-6">
+													<ul class="list-unstyled">
+														<!-- 调用新闻模块最新的数据 -->
+																												<li style="line-height: 23px"><span class="badge badge-empty badge-success"></span>&nbsp;<a href="/poscms/index.php?c=show&id=35" class="title">国务院安委会第一巡查组进驻青...</a></li>
+																												<li style="line-height: 23px"><span class="badge badge-empty badge-success"></span>&nbsp;<a href="/poscms/index.php?c=show&id=34" class="title">双11大战开始 小伙一天能卖1万...</a></li>
+																												<li style="line-height: 23px"><span class="badge badge-empty badge-success"></span>&nbsp;<a href="/poscms/index.php?c=show&id=33" class="title">前三季十大新型工业千亿级产业...</a></li>
+																												<li style="line-height: 23px"><span class="badge badge-empty badge-success"></span>&nbsp;<a href="/poscms/index.php?c=show&id=32" class="title">一煤难求 济宁百万吨级用户到...</a></li>
+																												<li style="line-height: 23px"><span class="badge badge-empty badge-success"></span>&nbsp;<a href="/poscms/index.php?c=show&id=31" class="title">&quot;人人车&quot;平台购买二手车 第二...</a></li>
+																												<li style="line-height: 23px"><span class="badge badge-empty badge-success"></span>&nbsp;<a href="/poscms/index.php?c=show&id=30" class="title">&quot;免费体检&quot;做饵非法集资220万 ...</a></li>
+																												<li style="line-height: 23px"><span class="badge badge-empty badge-success"></span>&nbsp;<a href="/poscms/index.php?c=show&id=29" class="title">电商的&quot;双11&quot;求变之路:单调的...</a></li>
+																												<li style="line-height: 23px"><span class="badge badge-empty badge-success"></span>&nbsp;<a href="/poscms/index.php?c=show&id=28" class="title">10月青岛市区&quot;气质&quot;得满分 首...</a></li>
+																												<li style="line-height: 23px"><span class="badge badge-empty badge-success"></span>&nbsp;<a href="/poscms/index.php?c=show&id=27" class="title">中国爆发极端大范围重污染天气...</a></li>
+																												<li style="line-height: 23px"><span class="badge badge-empty badge-success"></span>&nbsp;<a href="/poscms/index.php?c=show&id=26" class="title">罗智强：绿营启动&quot;洗风向&quot;工程...</a></li>
+																											</ul>
+												</div>
+											</div>
+
+										</div>
+										<div class="col-lg-5">
+											<div class="row">
+											<!-- 调用新闻模块带“图片”的数据 -->
+																							<div class="col-sm-4" style="overflow:hidden">
+													<div class="tile-container">
+														<div class="tile-thumbnail">
+															<a href="javascript:;">
+																<a href="/poscms/index.php?c=show&id=1" ><img src="statics/admin/images/nopic.gif" height="75"></a>
+															</a>
+														</div>
+														<div class="tile-title">
+															<h5><a href="/poscms/index.php?c=show&id=1" class="title">载能力也达到了1...</a></h5>
+														</div>
+													</div>
+												</div>
+																							<div class="col-sm-4" style="overflow:hidden">
+													<div class="tile-container">
+														<div class="tile-thumbnail">
+															<a href="javascript:;">
+																<a href="/poscms/index.php?c=show&id=2" ><img src="statics/admin/images/nopic.gif" height="75"></a>
+															</a>
+														</div>
+														<div class="tile-title">
+															<h5><a href="/poscms/index.php?c=show&id=2" class="title">中国长五比肩全...</a></h5>
+														</div>
+													</div>
+												</div>
+																						</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- 调用图片模块 -->
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="portlet light">
+								<div class="portlet-title">
+									<div class="caption">
+										<i class=" icon-layers font-green"></i>
+										<span class="caption-subject bold uppercase"><a class=" font-green" href="/poscms/index.php?s=photo">图片模块</a></span>
+									</div>
+									<ul class="nav nav-tabs">
+										<!-- 调用其子栏目 -->
+																				<li><a href="/poscms/index.php?s=photo&c=category&id=1">风景</a></li>
+																			</ul>
+								</div>
+								<div class="portlet-body">
+									<div class="row">
+										<!-- 最新数据 -->
+																				<div class="col-sm-3">
+											<div class="tile-container">
+												<div class="tile-thumbnail">
+													<a href="javascript:;">
+														<a href="/poscms/index.php?c=show&id=111" ><img src="http://127.0.0.1/poscms/api/thumb/913ea81c487e65c8259fa647ea586e56.jpg" width="250" height="200"></a>
+													</a>
+												</div>
+												<div class="tile-title">
+													<h5><a href="/poscms/index.php?c=show&id=111" class="title">摄影作品8</a></h5>
+												</div>
+											</div>
+										</div>
+																				<div class="col-sm-3">
+											<div class="tile-container">
+												<div class="tile-thumbnail">
+													<a href="javascript:;">
+														<a href="/poscms/index.php?c=show&id=110" ><img src="http://127.0.0.1/poscms/api/thumb/cfe75239332d450d354fac62bda4ce49.jpg" width="250" height="200"></a>
+													</a>
+												</div>
+												<div class="tile-title">
+													<h5><a href="/poscms/index.php?c=show&id=110" class="title">摄影作品7</a></h5>
+												</div>
+											</div>
+										</div>
+																				<div class="col-sm-3">
+											<div class="tile-container">
+												<div class="tile-thumbnail">
+													<a href="javascript:;">
+														<a href="/poscms/index.php?c=show&id=109" ><img src="http://127.0.0.1/poscms/api/thumb/34dcb5e373b375719090472818f9dab0.jpg" width="250" height="200"></a>
+													</a>
+												</div>
+												<div class="tile-title">
+													<h5><a href="/poscms/index.php?c=show&id=109" class="title">摄影作品6</a></h5>
+												</div>
+											</div>
+										</div>
+																				<div class="col-sm-3">
+											<div class="tile-container">
+												<div class="tile-thumbnail">
+													<a href="javascript:;">
+														<a href="/poscms/index.php?c=show&id=108" ><img src="http://127.0.0.1/poscms/api/thumb/e37e367b28336600386641a2250c2e53.jpg" width="250" height="200"></a>
+													</a>
+												</div>
+												<div class="tile-title">
+													<h5><a href="/poscms/index.php?c=show&id=108" class="title">摄影作品5</a></h5>
+												</div>
+											</div>
+										</div>
+																				<div class="col-sm-3">
+											<div class="tile-container">
+												<div class="tile-thumbnail">
+													<a href="javascript:;">
+														<a href="/poscms/index.php?c=show&id=107" ><img src="http://127.0.0.1/poscms/api/thumb/db0a1261ccd4ab2df58b7fc90ad699ec.jpg" width="250" height="200"></a>
+													</a>
+												</div>
+												<div class="tile-title">
+													<h5><a href="/poscms/index.php?c=show&id=107" class="title">摄影作品4</a></h5>
+												</div>
+											</div>
+										</div>
+																				<div class="col-sm-3">
+											<div class="tile-container">
+												<div class="tile-thumbnail">
+													<a href="javascript:;">
+														<a href="/poscms/index.php?c=show&id=106" ><img src="http://127.0.0.1/poscms/api/thumb/80cfb10432b72f57dc9aea667bf8ebc8.jpg" width="250" height="200"></a>
+													</a>
+												</div>
+												<div class="tile-title">
+													<h5><a href="/poscms/index.php?c=show&id=106" class="title">摄影作品3</a></h5>
+												</div>
+											</div>
+										</div>
+																				<div class="col-sm-3">
+											<div class="tile-container">
+												<div class="tile-thumbnail">
+													<a href="javascript:;">
+														<a href="/poscms/index.php?c=show&id=105" ><img src="http://127.0.0.1/poscms/api/thumb/efdfba3f19036aaff7465d4ed04a1fee.jpg" width="250" height="200"></a>
+													</a>
+												</div>
+												<div class="tile-title">
+													<h5><a href="/poscms/index.php?c=show&id=105" class="title">摄影作品2</a></h5>
+												</div>
+											</div>
+										</div>
+																				<div class="col-sm-3">
+											<div class="tile-container">
+												<div class="tile-thumbnail">
+													<a href="javascript:;">
+														<a href="/poscms/index.php?c=show&id=104" ><img src="http://127.0.0.1/poscms/api/thumb/b01af3f1725d8460b264475706c9df71.jpg" width="250" height="200"></a>
+													</a>
+												</div>
+												<div class="tile-title">
+													<h5><a href="/poscms/index.php?c=show&id=104" class="title">摄影作品</a></h5>
+												</div>
+											</div>
+										</div>
+																			</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- 调用下载模块 -->
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="portlet light">
+								<div class="portlet-title">
+									<div class="caption">
+										<i class=" icon-layers font-green"></i>
+										<span class="caption-subject bold uppercase"><a class=" font-green" href="/poscms/index.php?s=down">下载模块</a></span>
+									</div>
+									<ul class="nav nav-tabs">
+										<!-- 调用其子栏目 -->
+																			</ul>
+								</div>
+								<div class="portlet-body">
+									<div class="row">
+										<!-- 最新数据 -->
+																			</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- 友情链接 -->
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="portlet light">
+								<div class="portlet-title">
+									<div class="caption">
+										<i class=" icon-layers font-green"></i>
+										<span class="caption-subject bold uppercase">友情链接</span>
+									</div>
+								</div>
+								<div class="portlet-body">
+									<div class="row">
+										<div class="col-md-12">
+																					</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- BEGIN FOOTER -->
+<!-- BEGIN PRE-FOOTER -->
+<div class="page-prefooter">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12 footer-block">
+                <h2>POSCMS</h2>
+                <p> 采用PHP5+MYSQL做为技术基础、以CI3.0框架为核心，提供“PC网站＋手机网站”一体化网站技术解决方案。</p>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs12 footer-block">
+                <h2>全站搜索</h2>
+                <div class="subscribe-form">
+                    <form class="search-form" method="get" target="_blank" action="http://127.0.0.1/poscms/index.php">
+                        <input name="c" type="hidden" value="so">
+                        <input name="module" type="hidden" value="MOD_DIR">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="输入搜索关键字" name="keyword">
+                            <span class="input-group-btn">
+                                        <button class="btn" type="submit">搜索</button>
+                                    </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 footer-block">
+                <h2>分享我们</h2>
+                <div class="social-icons">
+                    <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a><a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a><a href="#" class="bds_mail" data-cmd="mail" title="分享到邮件分享"></a></div>
+                    <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 footer-block">
+                <h2>联系我们</h2>
+                <address class="margin-bottom-40"> 电话: 028-62562781
+                    <br> 邮箱:
+                    <a href="mailto:q@dayrui.com">q@dayrui.com</a>
+                </address>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END PRE-FOOTER -->
+<!-- BEGIN INNER FOOTER -->
+<div class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                POSCMS v3.2
+            </div>
+                        <div class="col-md-9 text-right">
+                            </div>
+                    </div>
+
+    </div>
+</div>
+<div class="scroll-to-top">
+    <i class="icon-arrow-up"></i>
+</div>
+<!-- END INNER FOOTER -->
+<!-- END FOOTER -->
+</body>
+
+</html>

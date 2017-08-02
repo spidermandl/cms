@@ -69,7 +69,6 @@ INSERT INTO `{tablename}_hits` VALUES(55, 4, 1, 1, 5, 1);
 --
 -- 转存表中的数据 `{tablename}_index`
 --
-
 INSERT INTO `{tablename}_index` VALUES(44, 1, 3, 9, 1478485238);
 INSERT INTO `{tablename}_index` VALUES(45, 1, 3, 9, 1478485573);
 INSERT INTO `{tablename}_index` VALUES(46, 1, 3, 9, 1478485717);
@@ -84,3 +83,15 @@ INSERT INTO `{tablename}_index` VALUES(54, 1, 3, 9, 1478487139);
 INSERT INTO `{tablename}_index` VALUES(55, 1, 3, 9, 1478487217);
 
 -- --------------------------------------------------------
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(44, 'fang');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(45, 'fang');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(46, 'fang');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(47, 'fang');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(48, 'fang');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(49, 'fang');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(50, 'fang');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(51, 'fang');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(52, 'fang');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(53, 'fang');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(54, 'fang');
+INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(55, 'fang');

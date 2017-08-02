@@ -214,7 +214,6 @@ INSERT INTO `{tablename}_search_index` VALUES('904d45cf9dfa3d512106418bb50b9716'
 --
 -- 转存表中的数据 `{dbprefix}{siteid}_share_index`
 --
-
 INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(1,'news');
 INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(2, 'news');
 INSERT INTO `{dbprefix}{siteid}_share_index` VALUES(3, 'news');

@@ -1,0 +1,8 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2016-12-30 01:16:40 --> Severity: Core Warning --> PHP Startup: Unable to load dynamic library '/Applications/AMPPS/php-7.0/lib/extensions/ext/pthreads.so' - dlopen(/Applications/AMPPS/php-7.0/lib/extensions/ext/pthreads.so, 9): image not found Unknown 0
+ERROR - 2016-12-30 06:05:00 --> Severity: Core Warning --> PHP Startup: Unable to load dynamic library '/Applications/AMPPS/php-7.0/lib/extensions/ext/pthreads.so' - dlopen(/Applications/AMPPS/php-7.0/lib/extensions/ext/pthreads.so, 9): image not found Unknown 0
+ERROR - 2016-12-30 07:10:39 --> Severity: Core Warning --> PHP Startup: Unable to load dynamic library '/Applications/AMPPS/php-7.0/lib/extensions/ext/pthreads.so' - dlopen(/Applications/AMPPS/php-7.0/lib/extensions/ext/pthreads.so, 9): image not found Unknown 0
+ERROR - 2016-12-30 07:11:46 --> Severity: Core Warning --> PHP Startup: Unable to load dynamic library '/Applications/AMPPS/php-7.0/lib/extensions/ext/pthreads.so' - dlopen(/Applications/AMPPS/php-7.0/lib/extensions/ext/pthreads.so, 9): image not found Unknown 0
+ERROR - 2016-12-30 07:22:36 --> Severity: Core Warning --> PHP Startup: Unable to load dynamic library '/Applications/AMPPS/php-7.0/lib/extensions/ext/pthreads.so' - dlopen(/Applications/AMPPS/php-7.0/lib/extensions/ext/pthreads.so, 9): image not found Unknown 0
+ERROR - 2016-12-30 07:33:05 --> Severity: Core Warning --> PHP Startup: Unable to load dynamic library '/Applications/AMPPS/php-7.0/lib/extensions/ext/pthreads.so' - dlopen(/Applications/AMPPS/php-7.0/lib/extensions/ext/pthreads.so, 9): image not found Unknown 0

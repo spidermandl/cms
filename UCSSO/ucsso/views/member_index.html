@@ -1,0 +1,86 @@
+{template "header.html"}
+
+<section class="vbox">
+	<section class="scrollable padder">
+		<div class="m-b-md">
+			<h3 class="m-b-none"><i class="{$my_menu[1]}"></i> {$my_menu[0]}</h3>
+		</div>
+		<section class="panel panel-default">
+			<header class="panel-heading">
+				全站用户
+			</header>
+			<div class="row wrapper">
+				<div class="col-sm-6 m-b-xs">
+					<form>
+						<input type="hidden" name="c" value="member">
+						<input type="hidden" name="m" value="index">
+						<input type="hidden" name="page" value="0">
+						<input type="hidden" name="total" value="0">
+						<div class="input-group">
+							<input type="text" name="keyword" value="{$param.keyword}" class="input-sm form-control" placeholder="用户名、邮箱、手机号码...">
+							<span class="input-group-btn">
+							<button class="btn btn-sm btn-default" type="submit">搜索</button>
+						  </span>
+						</div>
+					</form>
+				</div>
+				<div class="col-sm-6 text-right">
+
+					<a href="{dr_url('member/add')}" class="btn btn-sm btn-default"><i class="fa fa-plus"></i> 添加用户</a>
+				</div>
+			</div>
+			<form id="myform">
+			<div class="table-responsive">
+				<table class="table table-striped b-t b-light" style="margin-bottom: 0">
+					<thead>
+					<tr>
+						<th width="20"><label class="checkbox m-l m-t-none m-b-none i-checks"><input type="checkbox"><i></i></label></th>
+						<th width="75" style="text-align: center">头像</th>
+						<th>用户名</th>
+						<th>手机</th>
+						<th>邮箱</th>
+						<th>注册时间</th>
+						<th width="100"></th>
+					</tr>
+					</thead>
+					<tbody>
+					{loop  $list $t}
+					<tr>
+						<td style="padding-top: 20px"><label class="checkbox m-l m-t-none m-b-none i-checks"><input type="checkbox" value="{$t.id}" name="ids[]"><i></i></label></td>
+						<td style="text-align: center"><img class="thumb avatar " src="avatar/{if is_file(FCPATH.'avatar/'.$t[id].'.jpg')}{$t.id}{else}0{/if}.jpg"></td>
+						<td style="padding-top: 20px">{$t.username}</td>
+						<td style="padding-top: 20px">{$t.phone}</td>
+						<td style="padding-top: 20px">{$t.email}</td>
+						<td style="padding-top: 20px">{date('Y-m-d H:i:s', $t.regtime)}</td>
+						<td style="padding-top: 20px">
+							<a href="{dr_url('member/edit', array('id'=>$t.id))}" class="btn btn-xs btn-info"><i class="fa fa-edit"></i> 修改</a>
+
+						</td>
+					</tr>
+					{/loop}
+					</tbody>
+				</table>
+			</div>
+			</form>
+			<footer class="panel-footer">
+				<div class="row">
+
+						<div class="col-sm-4" style="padding-left: 10px">
+							<button type="button" class="btn btn-sm btn-danger" onclick="dr_ajax_option('{dr_url('member/del')}', '确定要删除用户吗？');"><i class="fa fa-times"></i>  删除 </button>
+						</div>
+					<div class="col-sm-4 text-center">
+						<small class="text-muted inline m-t-sm m-b-sm">共{$total}个用户</small>
+					</div>
+					<div class="col-sm-4 text-right text-center-xs">
+						<ul class="pagination pagination-sm m-t-none m-b-none">
+							{$pages}
+						</ul>
+					</div>
+				</div>
+			</footer>
+		</section>
+	</section>
+</section>
+
+
+{template "footer.html"}

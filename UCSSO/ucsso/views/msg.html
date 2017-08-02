@@ -1,0 +1,16 @@
+{template "header.html"}
+
+
+
+<div class="row" style="margin-top: 150px">
+    <div class="col-lg-3">&nbsp;</div>
+    <div class="col-lg-6">
+        <section class="panel panel-default">
+            <div class="panel-body"><h3><i class="fa {if $code}fa-check-circle{else}fa-times-circle{/if}"></i> {$msg}</h3></div>
+        </section>
+    </div>
+</div>
+{if $url}
+<meta http-equiv="refresh" content="{$time}; url={$url}">
+{/if}
+{template "footer.html"}
